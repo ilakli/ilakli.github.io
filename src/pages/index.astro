@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { getCollection } from 'astro:content';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<main>
+			<h1>🐼 Hello!</h1>
+			<p>
+				Welcome to my blog! So far it's empty, but hopefully will show more love to this.
+			</p>
+
+			<p>
+				Here will be the list of the posts:
+				<ul>
+					{
+						posts.map((post) => (
+							<li>
+								<a href={`/blog/${post.id}/`}>
+									<h class="title">{post.data.title} </h>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</p>
+			</ListBlogNames>
+		</main>
+	</body>
+</html>
