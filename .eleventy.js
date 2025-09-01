@@ -16,6 +16,7 @@ export default function(eleventyConfig) {
     },
     templateFormats: ["md", "liquid", "html"],
     markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "liquid"
+    htmlTemplateEngine: "liquid",
+    dataTemplateEngine: "liquid"
   };
 }
