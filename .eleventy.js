@@ -2,6 +2,7 @@ import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy({ "src/.nojekyll": ".nojekyll" });
   eleventyConfig.addPlugin(syntaxHighlight);
   
   eleventyConfig.addCollection("posts", function(collectionApi) {
