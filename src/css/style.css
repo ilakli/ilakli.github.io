@@ -131,7 +131,12 @@ p {
   margin-bottom: 2rem;
 }
 
+.posts-section {
+  padding-top: 2rem;
+}
+
 .posts-list {
+
   display: flex;
   flex-direction: column;
 }
@@ -148,23 +153,24 @@ p {
 
 .post-preview-date {
   color: var(--text-light);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-family: var(--font-heading);
-  display: block;
+  display: inline;
   font-weight: 400;
   letter-spacing: 0.025em;
-  margin-bottom: 0;
+  margin-left: 1rem;
 }
 
 .post-preview-title {
   margin-top: 0 !important;
   margin-bottom: 0.6rem !important;
+  display: inline;
 }
 
 .post-preview-title a {
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.3;
 }

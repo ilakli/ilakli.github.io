@@ -2,7 +2,7 @@
 layout: post.liquid
 title: 'Third post'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
+pubDate: 2022-07-22
 heroImage: '/blog-placeholder-2.jpg'
 ---
 
