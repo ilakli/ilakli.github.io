@@ -8,6 +8,7 @@
   --border: #e8e6e0;
   --accent: #264653;
   --accent-hover: #1a3440;
+  --ink: #1a1a2e;
   --shadow: 0 2px 8px rgba(44, 44, 44, 0.08);
   --shadow-lg: 0 8px 30px rgba(44, 44, 44, 0.12);
 
@@ -50,6 +51,7 @@ body {
   font-size: 0.9rem;
   color: var(--text-light);
   text-decoration: none;
+  border-bottom: none;
   font-weight: 400;
   letter-spacing: 0.025em;
   padding: 0.5rem 1rem;
@@ -100,6 +102,22 @@ h3 {
 p {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+  transition: all 0.2s ease;
+}
+
+a:visited {
+  color: var(--ink);
+}
+
+a:hover {
+  background: rgba(38, 70, 83, 0.08);
+  border-color: var(--accent);
 }
 
 /* Home page styling */
@@ -169,6 +187,7 @@ p {
 
 .post-preview-title a {
   text-decoration: none;
+  border-bottom: none;
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 600;
@@ -252,6 +271,7 @@ p {
 .back-home {
   color: var(--accent);
   text-decoration: none;
+  border-bottom: none;
   font-family: var(--font-heading);
   font-weight: 500;
   transition: color 0.2s ease;
@@ -344,6 +364,7 @@ p {
 .back-home {
   color: var(--accent);
   text-decoration: none;
+  border-bottom: none;
   font-family: var(--font-heading);
   font-weight: 500;
   font-size: 0.9rem;
