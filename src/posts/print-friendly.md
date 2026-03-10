@@ -25,7 +25,7 @@ looks like it belongs in a book, not a browser.
     <div class="preview-controls">
       <button id="print-btn">Print / Save as PDF</button>
     </div>
-    <iframe id="preview-frame" sandbox="allow-same-origin"></iframe>
+    <iframe id="preview-frame" sandbox="allow-same-origin allow-scripts"></iframe>
   </div>
 </div>
 
@@ -117,3 +117,6 @@ looks like it belongs in a book, not a browser.
     }
   }
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/@mozilla/readability@0.5.0/Readability.js"></script>
+<script src="/js/print-friendly.js"></script>
