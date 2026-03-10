@@ -10,6 +10,10 @@ async function fetchArticle(url) {
 }
 
 function fixRelativeUrls(doc, baseUrl) {
+  // Ensure base URL ends with / so relative paths resolve to the page directory
+  if (!baseUrl.endsWith("/")) {
+    baseUrl += "/";
+  }
   doc.querySelectorAll("img[src]").forEach((img) => {
     const src = img.getAttribute("src");
     if (src && !src.startsWith("http") && !src.startsWith("data:")) {
